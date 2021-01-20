@@ -1,0 +1,8 @@
+-cp src
+-main ArcBallCameraDemo 
+-lib haxe-lwjgl
+-lib haxe-joml
+-D osx 
+--jvm output/osx/Main.jar
+# --java output/linux
+-cmd java -XstartOnFirstThread -XX:+CompactStrings --module-path "output/osx/lib" -jar output/osx/Main.jar
